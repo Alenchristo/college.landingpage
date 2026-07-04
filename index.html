@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>St Mary's College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/graduation-cap.png" alt="St Mary's College logo" />
+        </div>
+        <div>
+          <p class="eyebrow">St Mary's College</p>
+          <h1 class="brand-name">Academic excellence for every student</h1>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="hero-label">Welcome to St Mary's College</span>
+        <h2>Where innovation, community, and academic excellence connect.</h2>
+        <p>Join a vibrant campus culture built for ambitious learners seeking meaningful careers, support, and global opportunities.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#admissions">Apply Now</a>
+          <a class="btn btn-secondary" href="#programs">Explore Programs</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section animate" id="about">
+      <div class="container section-grid">
+        <div class="section-text">
+          <span class="section-tag">About the College</span>
+          <h3>Learn in a supportive community designed for growth.</h3>
+          <p>Summit Ridge College offers career-focused degrees, mentorship from industry professionals, and a hands-on learning model. Our modern campus, flexible study options, and student-first approach ensure every learner can thrive.</p>
+          <ul class="feature-list">
+            <li>Industry-aligned curriculum</li>
+            <li>Strong student support network</li>
+            <li>Vibrant campus life and events</li>
+          </ul>
+        </div>
+        <div class="section-media">
+          <img src="https://tse3.mm.bing.net/th/id/OIP.YFtG64ix6Ko_ablDyTQPOAHaFL?pid=Api&h=220&P=0" alt="College campus aerial view" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section programs-section animate" id="programs">
+      <div class="container">
+        <span class="section-tag">Programs</span>
+        <h3>Academic paths built for the future.</h3>
+        <div class="card-grid">
+          <article class="program-card">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Computer science program" />
+            <div class="card-content">
+              <h4>Bachelor of Computer Science</h4>
+              <p>Develop software, systems, and intelligent applications with hands-on labs and capstone projects.</p>
+            </div>
+          </article>
+          <article class="program-card">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Business management program" />
+            <div class="card-content">
+              <h4>Bachelor of Business Management</h4>
+              <p>Learn leadership, strategy, and entrepreneurship through real-world case studies and team challenges.</p>
+            </div>
+          </article>
+          <article class="program-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80" alt="Design and media program" />
+            <div class="card-content">
+              <h4>Bachelor of Creative Media</h4>
+              <p>Explore design, digital storytelling, and brand experiences with expert mentors and modern tools.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section admissions-section animate" id="admissions">
+      <div class="container admissions-grid">
+        <div>
+          <span class="section-tag">Admissions</span>
+          <h3>Start your application in three simple steps.</h3>
+          <ol class="process-list">
+            <li><strong>Submit your inquiry.</strong> Tell us about your interests and goals.</li>
+            <li><strong>Review course options.</strong> Connect with advisors for guidance.</li>
+            <li><strong>Receive acceptance.</strong> Enroll and begin your path.</li>
+          </ol>
+          <p>We welcome learners from diverse backgrounds and offer flexible entry pathways for all motivated students.</p>
+          <a class="btn btn-primary" href="#contact">Request Info</a>
+        </div>
+        <div class="admissions-highlight">
+          <div class="highlight-card">
+            <h4>Open House</h4>
+            <p>Join our next campus tour to see classrooms, labs, and student life up close.</p>
+          </div>
+          <div class="highlight-card">
+            <h4>Scholarship Support</h4>
+            <p>Discover financial aid, merit awards, and resources to make college affordable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section animate" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <span class="section-tag">Contact</span>
+          <h3>Have questions? Reach out today.</h3>
+          <p>Our admissions team is ready to help you choose the right program, understand the application process, and prepare for campus life.</p>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+            <span class="error-message" id="nameError"></span>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <span class="error-message" id="emailError"></span>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required />
+            <span class="error-message" id="phoneError"></span>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help" required></textarea>
+            <span class="error-message" id="messageError"></span>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          <p class="form-success" id="formSuccess"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section location-section animate" id="location">
+      <div class="container location-grid">
+        <div>
+          <span class="section-tag">Location</span>
+          <h3>Visit St Mary's College on campus.</h3>
+          <p>Find us at the heart of Lakeside City, where thoughtful learning spaces, student services, and community events come together.</p>
+          <p><strong>Address:</strong> 123 Crestview Avenue, Lakeside City, CA 94000</p>
+        </div>
+        <div class="map-wrapper">
+          <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1188042496177!2d-122.08521928468169!3d37.421999179825434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5a8725e4561%3A0x2d422d49dd16c5a4!2sGoogleplex!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Google map location of St Mary's College"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>St Mary's College</h4>
+        <p>123 Crestview Avenue, Lakeside City, CA 94000</p>
+      </div>
+      <div>
+        <p>Phone: (555) 732-8901</p>
+        <p>Email: admissions@stmarys.edu</p>
+      </div>
+      <div class="social-links">
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
